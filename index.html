@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Химчистка мебели — ваша компания</title>
+  <meta name="description" content="Химчистка мебели и ковров с выездом по Казани. Быстро. Аккуратно. Гарантия результата." />
+  <!-- Замените на свой телефон в формате +7XXXXXXXXXX и Telegram username -->
+  <meta name="theme-color" content="#2b6cb0" />
+  <style>
+    /* Минималистичный адаптивный стиль */
+    :root{--accent:#2b6cb0;--bg:#f7f9fc;--card:#ffffff;--text:#222}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:0 auto;padding:18px}
+    header.hero{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:28px 0}
+    .brand{font-weight:700;font-size:20px}
+    .tag{color:#555;font-size:14px}
+    .hero-main{background:var(--card);padding:28px;border-radius:10px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+    .h1{font-size:26px;font-weight:700}
+    .lead{color:#444}
+    .buttons{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-call{background:linear-gradient(90deg,var(--accent),#1e90ff);color:#fff}
+    .btn-tg{border:2px solid var(--accent);color:var(--accent);background:transparent}
+    section{margin-top:18px}
+    .grid{display:grid;gap:12px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
+    .price{font-weight:700;color:var(--accent)}
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:calc(50% - 4px);border-radius:8px;object-fit:cover;height:140px}
+    .reviews .rev{margin-bottom:10px}
+    footer{margin:28px 0 80px;color:#555;font-size:14px}
+    @media(min-width:720px){
+      .hero-main{flex-direction:row;align-items:center;justify-content:space-between}
+      .h1{font-size:32px}
+      .gallery img{height:200px}
+    }
+    /* small helper */
+    .muted{color:#6b7280;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Хедер -->
+    <header class="hero">
+      <div>
+        <div class="brand">Химчистка мебели «ХимЩистка»</div>
+        <div class="tag">Чистим ковры, диваны, матрасы. Выезд по Казани.</div>
+      </div>
+      <div class="muted">Работаем 8:00–22:00</div>
+    </header>
+
+    <!-- Герой-блок -->
+    <main class="hero-main">
+      <div style="max-width:640px">
+        <div class="h1">Чистота без хлопот. Выезд на дом в тот же день.</div>
+        <div class="lead">Профессиональная химчистка мебели, ковров и матрасов. Безопасные средства. Гарантия качества.</div>
+        <div style="margin-top:10px" class="buttons">
+          <!-- Замените телефон и tg-username -->
+          <a class="btn btn-call" href="tel:+79934233900">Позвонить +7 (993) 423-39-00</a>
+          <a class="btn btn-tg" href="https://t.me/dry_cleaning_kzn" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+      </div>
+      <div style="min-width:180px;text-align:center">
+        <!-- Поставьте логотип или фото -->
+        <img src="images/logo.jpg" alt="" style="border-radius:8px;width:180px;height:140px;object-fit:cover">
+        <div class="muted" style="margin-top:8px;font-size:13px">Выездная химчистка • Гарантия результата</div>
+      </div>
+    </main>
+
+    <!-- Услуги -->
+    <section>
+      <h2>Услуги и цены</h2>
+      <div class="grid services">
+        <div class="card">
+          <div style="font-weight:700">Химчистка</div>
+          <div class="muted">Базовая чистка, удаление пятен</div>
+          <div class="price">от 1 100 ₽</div>
+          <div style="margin-top:8px"><a class="btn btn-tg" href="https://t.me/dry_cleaning_kzn" target="_blank" rel="noopener">Уточнить цену в Telegram</a></div>
+        </div>
+<div class="card">
+          <div style="font-weight:700">Химчистка</div>
+          <div class="muted">Стандартная чистка, удаление грязи</div>
+          <div class="price">от 1 800 ₽</div>
+        </div>
+        <div class="card">
+          <div style="font-weight:700">Химчистка</div>
+          <div class="muted">Глубокая чистка, удаление самого объекта</div>
+          <div class="price">от 2 200 ₽</div>
+        </div>
+        <div class="card">
+          <div style="font-weight:700">Коммерческая химчистка</div>
+          <div class="muted">Договоренность по факту</div>
+          <div class="price">от 9 990 ₽</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея (до/после) -->
+    <section>
+      <h2>Фото до / после</h2>
+      <div class="gallery card" style="padding:10px">
+        <!-- Замените src на свои фото -->
+        <img src="images/do1.jpg" alt="Кресло до чистки">
+        <img src="images/posle1.jpg" alt="Кресло после чистки">
+        <img src="images/do2.jpg" alt="Диван после чистки">
+        <img src="images/posle2.jpg" alt="Диван после чистки">
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+      <h2>Отзывы</h2>
+      <div class="card">
+        <div class="rev"><strong>Ольга</strong><div class="muted">— Диван как новый, приехали вовремя. Рекомендую.</div></div>
+        <div class="rev"><strong>Ильдар</strong><div class="muted">— Убрали старые пятна. Работой доволен.</div></div>
+        <!-- Добавьте реальные скриншоты отзывов при наличии -->
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section>
+      <h2>Контакты</h2>
+      <div class="card" style="display:flex;flex-direction:column;gap:8px">
+        <div><strong>Телефон</strong><br><a href="tel:+79934233900">+7 (993) 423-39-00</a></div>
+        <div><strong>Telegram</strong><br><a href="https://t.me/dry_cleaning_kzn" target="_blank" rel="noopener">@dry_cleaning_kzn</a></div>
+        <div><strong>Район</strong><br>Казань и область</div>
+        <div class="muted">Работаем 7 дней в неделю. Срочный выезд по договорённости.</div>
+      </div>
+    </section>
+
+    <footer style="text-align:center">
+      <div class="muted">© <span id="year"></span> Химчистка «Василек» • Все права защищены</div>
+    </footer>
+  </div>
+
+  <script>
+    // Скрипты: год, простая аналитика кликов (локально)
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Отслеживание кликов на телефон и Telegram (можно интегрировать с аналитикой)
+    function track(name){ try{ console.log('track:',name) }catch(e){} }
+    document.querySelectorAll('a[href^="tel:"], a[href*="t.me"]').forEach(a=>{
+      a.addEventListener('click', ()=> track(a.getAttribute('href')));
+    });
+  </script>
+</body>
+</html>
